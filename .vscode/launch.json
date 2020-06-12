@@ -6,14 +6,15 @@
             "request": "launch",
             "name": "Your own server",
             "server": "http://localhost",
-            "serverInstance": "BC130",
-            "authentication": "UserPassword",
-            "startupObjectId": 22,
+            "serverInstance": "BC140",
+            "authentication":"UserPassword",
+            "startupObjectId": 7019,
             "startupObjectType": "Page",
             "breakOnError": true,
             "launchBrowser": true,
             "enableLongRunningSqlStatements": true,
-            "enableSqlInformationDebugger": true
+            "enableSqlInformationDebugger": true,
+            "schemaUpdateMode":"ForceSync"
         }
     ]
 }
