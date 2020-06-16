@@ -1,4 +1,4 @@
-codeunit 50002 "Test Codeunit"
+codeunit 50000 TestCodeunit
 {
     procedure TestRoute()
     var
