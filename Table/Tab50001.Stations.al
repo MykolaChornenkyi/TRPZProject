@@ -35,4 +35,18 @@ table 50001 Stations
         }
     }
 
+    trigger onDelete()
+    var
+        StationsObserver: Codeunit "Stations Observer";
+    begin
+        StationsObserver.DeleteStops("Assigned To Route");
+    end;
+
+    trigger OnInsert()
+    var
+        StationsObserver: Codeunit "Stations Observer";
+    begin
+        StationsObserver.AddStops("Assigned To Route");
+    end;
+
 }
