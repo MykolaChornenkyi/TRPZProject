@@ -40,6 +40,14 @@ report 50000 "Races  Analysis "
 
                 UrgentDescription := DriverUrgents.DecorateUrgentTasks("Driver No", "Ammount of passagers", OnDate);
             end;
+
+            trigger OnPreDataItem()
+            var
+                SecurityTest: Codeunit SecurityIsolation;
+            begin
+                if SecurityTest.Test(0) then
+                    Error('Sorry, you dont have permmissions');
+            end;
         }
     }
     requestpage
